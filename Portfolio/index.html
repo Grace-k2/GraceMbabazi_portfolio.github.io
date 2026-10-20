@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mbabazi Grace - Portfolio</title>
+  <style>
+    /* Global Styles & Dark Theme Colors */
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --card-subtle: #21262d;
+      --border-color: #30363d;
+      --accent-color: #58a6ff;
+      --text-main: #c9d1d9;
+      --text-heading: #f0f6fc;
+      --text-muted: #8b949e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+    }
+
+    /* Header & Profile Picture */
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      color: var(--text-heading);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: var(--border-color);
+      margin: 2rem 0;
+    }
+
+    /* Headings */
+    h2 {
+      color: var(--text-heading);
+      font-size: 1.4rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      color: var(--accent-color);
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Content Lists & Badges */
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    li::before {
+      content: "•";
+      color: var(--accent-color);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    code {
+      background-color: var(--card-subtle);
+      color: var(--accent-color);
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.9rem;
+      border: 1px solid var(--border-color);
+    }
+
+    /* Projects Section */
+    .project-item {
+      background-color: var(--card-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .project-item h3 {
+      margin-top: 0;
+    }
+
+    /* Links & Buttons */
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer Quote */
+    footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      font-style: italic;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Profile Header -->
+    <header>
+      <img src="./me.jpeg" alt="Mbabazi Grace" class="profile-img">
+      <h1>Hi there, I'm Mbabazi Grace 👋</h1>
+    </header>
+
+    <hr>
+
+    <main>
+      <!-- About Me Section -->
+      <section>
+        <h2>🎓 About Me</h2>
+        <p>
+          My name is Mbabazi Grace and I am pursuing a B.Sc. in <strong>Data Science & Analytics</strong> at Uganda Christian University (UCU). I have a strong passion for technology, problem-solving, and continuous learning. I love understanding how things operate beneath the surface. My goal is to use data analytics and AI to build meaningful tools that address real-world problems, especially in healthcare.
+        </p>
+        <ul>
+          <li>🎯 <strong>Career Goal:</strong> Applying data analytics, software development, and AI to solve real-world challenges in <strong>healthcare</strong> and the <strong>environment</strong>.</li>
+          <li>🌱 <strong>Currently Learning:</strong> Python, Pandas, data manipulation, algorithm design, data analysis with Seaborn and Matplotlib, and version control with Git/GitHub.</li>
+          <li>💬 <strong>Ask me about:</strong> Introductory Python, data visualization, computer hardware basics, and computer networking.</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <!-- Tech Stack & Tools Section -->
+      <section>
+        <h2>🛠️ Tech Stack & Tools</h2>
+        
+        <p><strong>Languages & Data Tools:</strong></p>
+        <p>
+          <code>Python</code> | <code>Pandas</code> | <code>Jupyter Notebooks</code> | <code>SQL</code> | <code>Matplotlib</code> | <code>Seaborn</code> | <code>Numpy</code>
+        </p>
+
+        <p><strong>Platforms & Version Control:</strong></p>
+        <p>
+          <code>Git</code> | <code>GitHub</code> | <code>Kaggle</code> | <code>GeeksforGeeks</code> | <code>VS Code</code>
+        </p>
+
+        <p><strong>Core Operating & Computer Systems:</strong></p>
+        <ul>
+          <li>System Architecture, Computer Hardware, Basic Networking Topologies</li>
+          <li>CPU Thermal & Power Management</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <!-- Projects Section -->
+      <section>
+        <h2>📁 Key Projects & Coursework</h2>
+
+        <!-- Project 1 -->
+        <article class="project-item">
+          <h3>1. 📊 Data Manipulation & Analytics Exercises</h3>
+          <p><strong>Description:</strong> A collection of Python scripts and Jupyter Notebooks focusing on computing statistics (e.g., standard deviation, distribution skewness) and handling data frames using Pandas.</p>
+          <p><strong>Tools:</strong> Python, Pandas, Jupyter Notebooks</p>
+          <p><strong>Link:</strong> <a href="https://github.com/Grace-k2/Prob-stat" target="_blank" rel="noopener noreferrer">View Repository</a></p>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-item">
+          <h3>2. 💻 Computer Systems & Hardware</h3>
+          <p><strong>Hardware & CPU Thermal Analysis Report:</strong> Academic investigation and report into system architecture, thermal throttling, and hardware memory hierarchies.</p>
+          <p><strong>Network Topologies & Infrastructure Summary:</strong> Coursework covering basic computer networking models, protocols, and topology structures.</p>
+          <p><strong>Tools:</strong> Technical Documentation, System Diagnostics</p>
+          <p><strong>Link:</strong> <a href="https://github.com/Grace-k2" target="_blank" rel="noopener noreferrer">View Repository</a></p>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-item">
+          <h3>3. 🤖 Logic & Algorithmic Foundations</h3>
+          <p><strong>Karel Structural Logic Solutions:</strong> Algorithmic execution and problem-solving scripts using conditional execution and loop structures.</p>
+          <p><strong>Tools:</strong> Python, <code>stanfordkarel</code></p>
+          <p><strong>Link:</strong> <a href="https://github.com/Grace-k2/structured-programming" target="_blank" rel="noopener noreferrer">View Repository</a></p>
+        </article>
+
+      </section>
+
+      <hr>
+
+      <!-- Reach Me Section -->
+      <section>
+        <h2>📫 How to Reach Me</h2>
+        <ul>
+          <li>📧 <strong>Email:</strong> <a href="mailto:gracembabazi756@gmail.com">gracembabazi756@gmail.com</a></li>
+          <li>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/grace-mbabazi-8bb2bb336/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+          <li>📊 <strong>Kaggle:</strong> <a href="https://www.kaggle.com/gracembabazi" target="_blank" rel="noopener noreferrer">Kaggle Profile</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer Quote -->
+    <footer>
+      <p>"Building tools and leveraging data to drive meaningful impacts in health and sustainability."</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

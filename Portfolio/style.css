@@ -1,0 +1,152 @@
+/* ==========================================
+   Portfolio Stylesheet (style.css)
+   ========================================== */
+
+/* Root Variables for Color & Typography */
+:root {
+    --primary-color: #0f172a;       /* Deep slate/navy */
+    --accent-color: #2563eb;        /* Professional blue */
+    --text-color: #334155;          /* Dark gray for readable body text */
+    --light-bg: #f8fafc;          /* Off-white / light gray background */
+    --border-color: #e2e8f0;        /* Subtle border color */
+    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Global Reset & Base Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+/* Main Container */
+.portfolio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.contact-info {
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+.contact-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Section Headings */
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Text & Lists */
+p {
+    margin-bottom: 12px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Project & Coursework Cards */
+.project-item {
+    background: var(--light-bg);
+    padding: 18px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.project-item p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* Print Friendly Styles (Optimized for PDF export) */
+@media print {
+    body {
+        background-color: #ffffff;
+        padding: 0;
+    }
+    
+    .portfolio-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .project-item {
+        background: #ffffff;
+        border: 1px solid var(--border-color);
+        border-left: 4px solid var(--accent-color);
+    }
+}
